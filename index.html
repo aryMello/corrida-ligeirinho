@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Corrida do Ligeirinho</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Você consegue capturar o rato mais rapido do mexico?</h1>
+
+        <div class="canvas-container">
+            <div class="canvas-wrapper">
+                <canvas id="mainCanvas"></canvas>
+                
+                <div id="catchModal" class="catch-modal hidden">
+                    <div class="catch-content">
+                        <p class="catch-title">¡Arriba! 🎉</p>
+                        <p>Você pegou o Ligeirinho!</p>
+                        <button id="resetBtn" class="btn btn-primary">Tentar Novamente</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls" id="controlsPanel">
+                <h3>Controles</h3>
+                
+                <div class="control-group">
+                    <h4>Navegação da Câmera</h4>
+                    <p class="info"><strong>Setas (ou WSAD):</strong> Mover câmera manualmente</p>
+                    <p class="info"><strong>F:</strong> Seguir o Ligeirinho</p>
+                    <p class="info"><strong>R:</strong> Resetar após captura</p>
+                </div>
+
+                <div class="control-group">
+                    <h4>Interação</h4>
+                    <p class="info"><strong>Click:</strong> Tentar capturar o Ligeirinho!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer" style="margin-top: 20px;">
+            <p style="text-align: center; color: var(--text-secondary);">
+                Projeto de Computação Gráfica - N2+
+            </p>
+        </div>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
