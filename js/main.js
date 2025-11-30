@@ -56,7 +56,6 @@ class Application {
     this.backgroundMusic = new Audio('./assets/salsa.mp3');
     this.backgroundMusic.loop = true;
     this.backgroundMusic.volume = 0.5;
-    this.backgroundMusic.play();
   }
   
   setupEventListeners() {
@@ -174,5 +173,9 @@ class Application {
 
 // Iniciar aplicação quando o DOM estiver pronto
 document.addEventListener('DOMContentLoaded', () => {
-  new Application();
+   const app = new Application();
+  // Esperar o primeiro clique
+  document.body.addEventListener('click', () => {
+    app.backgroundMusic.play();
+  }, { once: true });
 });
