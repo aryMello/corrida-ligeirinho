@@ -27,8 +27,6 @@ Ao capturar, um modal aparece com feedback visual.
 
 ---
 
----
-
 ## Tecnologias Utilizadas
 
 - HTML5 Canvas 
