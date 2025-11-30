@@ -51,6 +51,12 @@ class Application {
     
     // Iniciar animação
     this.animate(0);
+
+    // Adicionar som de fundo
+    this.backgroundMusic = new Audio('./assets/salsa.mp3');
+    this.backgroundMusic.loop = true;
+    this.backgroundMusic.volume = 0.5;
+    this.backgroundMusic.play();
   }
   
   setupEventListeners() {
