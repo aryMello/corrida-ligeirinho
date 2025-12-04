@@ -35,7 +35,7 @@ export class SpeedyGonzales {
     }
     
     // Aplicar aceleração em direção ao alvo
-    const speed = 4;
+    const speed = 10;
     this.vx += (dx / dist) * 0.5;
     this.vy += (dy / dist) * 0.5;
     
